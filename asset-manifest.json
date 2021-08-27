@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Textnote/static/css/main.486e782b.chunk.css",
-    "main.js": "/Textnote/static/js/main.ff7e3e75.chunk.js",
-    "main.js.map": "/Textnote/static/js/main.ff7e3e75.chunk.js.map",
+    "main.js": "/Textnote/static/js/main.ed0a0fce.chunk.js",
+    "main.js.map": "/Textnote/static/js/main.ed0a0fce.chunk.js.map",
     "runtime-main.js": "/Textnote/static/js/runtime-main.69ef2692.js",
     "runtime-main.js.map": "/Textnote/static/js/runtime-main.69ef2692.js.map",
     "static/js/2.8aa01c64.chunk.js": "/Textnote/static/js/2.8aa01c64.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.69ef2692.js",
     "static/js/2.8aa01c64.chunk.js",
     "static/css/main.486e782b.chunk.css",
-    "static/js/main.ff7e3e75.chunk.js"
+    "static/js/main.ed0a0fce.chunk.js"
   ]
 }
