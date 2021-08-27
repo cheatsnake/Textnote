@@ -1,0 +1,108 @@
+.note-list {
+    width: 320px;
+    height: 100vh;
+    background-color: #191e21;
+    color: #fff;
+    z-index: 5;
+    &__header {
+        height: 60px;
+        display: flex;
+        padding: 10px 15px 15px 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+    }
+    &__inner {
+        display: flex;
+        h2 {
+            margin-left: 35px;
+            line-height: 30px;
+        }
+    }
+    &__search {
+        padding-bottom: 2px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+        .search {
+            font-weight: 300;
+            background-color: #191e21;
+            color: #fff;
+            width: 100%;
+            border: none;
+            font-size: 1rem;
+            padding: 0 10px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__lists {
+        height: calc(100vh - 130px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        cursor: pointer;
+        position: relative;
+        padding: 10px 10px 15px 10px;
+        display: flex;
+        flex-direction: column;
+        transition: .3s all;
+        &__title {
+            font-size: 17px;
+            font-weight: 500;
+        }
+        &__body {
+            opacity: 0.8;
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &:hover {
+            background-color: #1d2327;
+        }
+    }
+    &__footer {
+        position: relative;
+        background-color: #191e21;
+        width: 100%;
+        height: 40px;
+    }
+    &_off {
+        display: none;
+    }
+}
+
+.active {
+    background-color: rgb(38, 46, 64);
+}
+
+.label {
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    left: 50%;
+    color: #fff;    
+    opacity: 0.5;
+    transform:translate(-50%, -50%);
+    font-size: 11px;
+    font-weight: 300;
+    transition: 0.3s all;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        .note-list {
+            position: absolute;
+        }
+    }
+}

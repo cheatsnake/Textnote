@@ -1,0 +1,163 @@
+.editor {
+    width: calc(100% - 320px);
+    height: 100vh;
+    background-color: #1d2327;
+    padding-top: 50px;
+    &__title {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        border: none;
+        color: #fff;
+        padding: 0 200px;
+        font-weight: 700;
+        background-color: #1d2327;
+        font-size: 24px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__area {
+        opacity: 0.95;
+        width: 100%;
+        height: calc(100% - 50px);
+        resize: none;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 200px 50px 200px;
+        background-color: #1d2327;
+        &:focus {
+            outline: none;
+        }
+    }
+    &_empty {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_full {
+        width: 100%;
+        input {
+            padding: 0 360px;
+        }
+        textarea {
+            padding: 10px 360px 100px 360px;
+        }
+    }
+}
+
+.no__note {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.551);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 1368px) {
+    body {
+        .editor {
+            &__title {
+                padding: 0 150px;
+            }
+            &__area {
+                padding: 10px 150px 50px 150px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        .editor {
+            &__title {
+                padding: 0 100px;
+            }
+            &__area {
+                padding: 10px 100px 50px 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        .editor {
+            padding-top: 50px;
+            &__title {
+                padding: 0 50px;
+            }
+            &__area {
+                padding: 10px 50px 50px 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        .editor {
+            padding-top: 30px;
+            &__title {
+                padding: 0 30px;
+            }
+            &__area {
+                padding: 10px 30px 50px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        .editor {
+            width: 100%;
+            padding-top: 30px;
+            &__title {
+                padding: 0 50px;
+            }
+            &__area {
+                padding: 10px 20px 50px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        .editor {
+            &__title {
+                font-size: 22px;
+            }
+            &__area {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: 399px) {
+    body {
+        .editor {
+            width: 100%;
+            padding-top: 10px;
+            &__area {
+                padding: 10px 15px 30px 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    body {
+        .editor {
+            &__title {
+                font-size: 20px;
+            }
+            &__area {
+                padding: 10px 10px 20px 10px;
+            }
+        }
+    }
+}
