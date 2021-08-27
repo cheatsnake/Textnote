@@ -24,7 +24,7 @@ const AuthPage = () => {
 
     const regHandler = async () => {
         try {
-            await axios.post('/api/auth/reg', {...form}, {
+            await axios.post('https://txtnote.herokuapp.com/api/auth/reg', {...form}, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -38,7 +38,7 @@ const AuthPage = () => {
 
     const loginHandler = async () => {
         try {
-            await axios.post('/api/auth/log', {...form}, {
+            await axios.post('https://txtnote.herokuapp.com/api/auth/log', {...form}, {
                 headers: {
                     'Content-Type': 'application/json'
                 }

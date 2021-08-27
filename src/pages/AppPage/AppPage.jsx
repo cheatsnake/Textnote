@@ -41,7 +41,7 @@ https://github.com/cheatsnake`,
 
     const createNote = useCallback(async () => {
         try {
-            await axios.post('/api/note/add', {notes, userId}, {
+            await axios.post('https://txtnote.herokuapp.com/api/note/add', {notes, userId}, {
                 headers: {'Content-Type': 'application/json'}
             }).then(response => {
                 setNotesId(response.data._id);
@@ -53,7 +53,7 @@ https://github.com/cheatsnake`,
 
     const getNotes = useCallback(async () => {
         try {
-            await axios.get('/api/note', {
+            await axios.get('https://txtnote.herokuapp.com/api/note', {
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -78,7 +78,7 @@ https://github.com/cheatsnake`,
 
     const updateNotes = useCallback(async (id) => {
         try {
-            await axios.put(`/api/note/update/${id}`, {notes}, {
+            await axios.put(`https://txtnote.herokuapp.com/api/note/update/${id}`, {notes}, {
                 headers: {'Content-Type': 'application/json'}
             })
             .then(response => console.log(response))
