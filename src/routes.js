@@ -7,15 +7,15 @@ export const useRoutes = (isLogin) => {
     if (isLogin) {
         return (
             <Switch>
-                <Route path="/Textnote" exact component={AppPage}/>
-                <Redirect to="/Textnote"/>
+                <Route path="/" exact component={AppPage}/>
+                <Redirect to="/"/>
             </Switch>
         )
     }
     return (
         <Switch>
-            <Route path="/Textnote/log" exact component={AuthPage}/>
-            <Redirect to="/Textnote/log"/>
+            <Route path="/log" exact component={AuthPage}/>
+            <Redirect to="/log"/>
         </Switch>
     )
 

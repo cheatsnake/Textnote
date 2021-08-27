@@ -61,14 +61,14 @@ https://github.com/cheatsnake`,
             })
             .then((response) => {
                 if (response.data.length) {
-                    console.log('data OK');
+                    // console.log('data OK');
                     setNotes(response.data[0].notes);
                     setNotesId(response.data[0]._id);
                 } else if (userId) {
-                    console.log('CREATE NEW USER DATA');
+                    // console.log('CREATE NEW USER DATA');
                     createNote();
                 } else {
-                    console.log('NOT FOUND');
+                    // console.log('NOT FOUND');
                 }
             })
         } catch (error) {
@@ -88,7 +88,7 @@ https://github.com/cheatsnake`,
     }, [notes]);
 
     useEffect(() => {
-        console.log('Hello');
+        // console.log('Hello');
         getNotes();
     }, [userId]);
 
@@ -126,8 +126,7 @@ https://github.com/cheatsnake`,
         let x = menuActive
         setMenuActive(!x)
     }
-    console.log(userId);
-    console.log(notesId);
+    
     return (
         <>
             <NoteList 
