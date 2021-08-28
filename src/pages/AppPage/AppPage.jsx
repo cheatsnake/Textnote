@@ -81,7 +81,6 @@ https://github.com/cheatsnake`,
             await axios.put(`https://txtnote.herokuapp.com/api/note/update/${id}`, {notes}, {
                 headers: {'Content-Type': 'application/json'}
             })
-            .then(response => console.log(response))
         } catch (error) {
             console.log(error);
         }
