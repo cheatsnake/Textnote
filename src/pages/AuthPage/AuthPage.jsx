@@ -57,7 +57,7 @@ const AuthPage = () => {
             <Switch>
                 <React.Fragment>
                 <div className="container">
-                    <Route path="/log">
+                    <Route path="/Textnote/log">
                         <div className="authPage">
                             <h3>Log in</h3>
                             <form className="form form_login" onSubmit={e => e.preventDefault()}>
@@ -83,7 +83,7 @@ const AuthPage = () => {
                                 </div>
                                 <div className="auth__wrapper">
                                     <button className="btn_auth" onClick={loginHandler}>Login</button>
-                                    <Link to="/reg" className="registration">New User?</Link>
+                                    <Link to="/Textnote/reg" className="registration">New User?</Link>
                                 </div>
                             </form>
 
@@ -96,7 +96,7 @@ const AuthPage = () => {
                         </div>
                     </Route>
 
-                    <Route path="/reg">
+                    <Route path="/Textnote/reg">
                         <div className="authPage">
                             <h3>Create a new User</h3>
                             <form className="form form_login" onSubmit={e => e.preventDefault()}>
@@ -122,7 +122,7 @@ const AuthPage = () => {
                                 </div>
                                 <div className="auth__wrapper">
                                     <button className="btn_auth" onClick={regHandler}>Sign up</button>
-                                    <Link to="/log" className="registration">Already registered?</Link>
+                                    <Link to="/Textnote/log" className="registration">Already registered?</Link>
                                 </div>
                             </form>
                             {errReg ? (
