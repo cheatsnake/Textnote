@@ -2,7 +2,7 @@
 
 [![N|Solid](https://i.ibb.co/PxTMPJ9/btn.png)](https://cheatsnake.github.io/PromoTextnote)
 
-A simple online text editor with the function of authorization and cloud data storage. Adapted for various devices.
+A simple online note editor with the function of authorization and cloud data storage. Adapted for various devices.
 
 ## Features
 
