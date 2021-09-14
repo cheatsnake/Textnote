@@ -13,10 +13,12 @@ const AppPage = () => {
             {
                 id: uuid(),
                 title: 'Welcome to Textnote',
-                body: `Textnote is a simple text editor for creating text notes. This is an absolutely free app.
+                body: `Text note is a simple online application for creating notes and storing various texts. The application is available in the browser for any device. A cloud database is used to store information, so all your notes will be available on all your devices. The application has an intuitively simple interface.
 
-The source code of the application is available at the link
-https://github.com/cheatsnake`,
+Text note is an absolutely free and open source application. 
+The application repository on Github is available at the link:
+https://github.com/cheatsnake/Textnote
+                `,
                 time: Date.now()
             }
         ]
